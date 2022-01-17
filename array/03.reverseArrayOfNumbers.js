@@ -1,7 +1,5 @@
 function solve(num,arr){
-//  newArr = arr.reverse().join();
  let arrCont =[];
-
 for(let i=0;i<num;i++){
     arrCont.push(arr[i])
 }console.log(arrCont.reverse().join(' '));
