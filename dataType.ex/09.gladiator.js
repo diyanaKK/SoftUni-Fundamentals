@@ -16,7 +16,7 @@ function solve(lostFightCount, helmetPrice, swordPrice, shieldPrice, armorPrice)
     }
     
 }
-console.log(total);
+console.log(` Gladiator expenses: ${total.toFixed(2)} aureus`);
 }
 solve(23,
 12.50,
