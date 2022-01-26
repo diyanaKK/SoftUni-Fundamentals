@@ -1,14 +1,15 @@
 function solve(arr) {
-    let max = arr[0];
-   let output = ''
-    for (let i = 1; i < arr.length; i++) {
-        if ( arr[i] > max ) {
-        // output+= arr[i] +' '
+//     let max = arr[0];
+//    let output = ''
+//     for (let i = 1; i < arr.length; i++) {
+//         if ( arr[i] > max ) {
+//         // output+= arr[i] +' '
         
-        }
+//         }
         
-    }
-    
+//     }
+
+
 
 }
 

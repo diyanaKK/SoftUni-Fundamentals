@@ -2,34 +2,28 @@
 function solve(arr){
 let health = 100;
 let initialCoins = 0;
-for(let i = 0;i<arr.length;i++){
-for (let element of arr) {
-    if(element.includes("potion")){
-health+=Number(element);
-    if(health===100){
-        health= 100;
-        console.log(`You healed for ${Number(element)} hp.`);
-        console.log(`Current health: ${health} hp.`);
-        //  If the first part is &quot;potion&quot;: you are healed with the number in the second part. But your health cannot
-// exceed your initial health (100). Print: &quot;You healed for {0} hp.&quot;
+let allCoins = 0;
+let dungen = arr[0].split('|');
+let counterRooms = 0;
 
+for(let i = 0;i<dungen.length;i++){
+   let currentRoom =dungen[i].split(' ');
+   let comand = currentRoom[0].split(' ');
+   let num = currentRoom[1];
+if(comand === 'potion'){
+    if(num+health>100){
+        health=100;
+    }else{
+        health+=num;
+        console.log(`Current health: ${num}hp`);
     }
-}else if(element.includes('chest')){
-    initialCoins+=Number(element)
-    console.log(`You found ${Number(element)} coins.`);
-}else if(health>0){
-    console.log(`You slayed
-        ${element}.`);
-}else if(health<=0){
-    console.log(`You died! Killed by ${element}.`);
-    console.log(`Best room: ${i}`);
-
-}if(i== element){
-    console.log(`You've made it!, Coins: ${initialCoins}, Health: ${health}.`);
 
 }
 }
-}
+
+
+
+
 }
 
 

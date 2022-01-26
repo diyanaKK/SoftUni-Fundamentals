@@ -1,8 +1,12 @@
 function solve(arr,num){
-let sum = 0;
-arr.forEach(element,index)
 for(let i = 0;i<arr.length;i++){
-    
+    for(let k = i +1;k<arr.length;k++){
+        if(arr[i]+arr[k]=== num){
+            console.log(`${arr[i]} ${arr[k]}`);
+        }
+    }
 }
 }
-solve([1, 7, 6, 2, 19, 23],8)
+solve([1, 7, 6, 2, 19, 23],8);
+solve([14, 20, 60, 13, 7, 19, 8],
+    27)
