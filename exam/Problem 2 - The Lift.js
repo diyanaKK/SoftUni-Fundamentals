@@ -9,7 +9,7 @@ function solve(input) {
      if(waitingPeople=== 0){
          break;
      }
-     else if(spacesAvailable< 4 && waitingPeople>4){
+     else if(spacesAvailable< 4 && waitingPeople >=4){
         waitingPeople-= add
         stateOfLift[i]+=add;
     }else if(spacesAvailable < 4 && waitingPeople <= 4 && waitingPeople > 0){
@@ -26,10 +26,14 @@ function solve(input) {
     } else if (waitingPeople > 0 && !hasSpaces) {
         console.log(`There isn't enough space! ${waitingPeople} people in a queue!
 ${stateOfLift.join(' ')}`);
+    }else if (waitingPeople===0 && !hasSpaces){
+console.log(stateOfLift.join(' '));
     }
+    
 }
 
 solve([
     "0",
     "0 2 1 4 1"
    ])
+   
