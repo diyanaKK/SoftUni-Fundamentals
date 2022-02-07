@@ -43,6 +43,8 @@ function solve(input) {
             console.log(`You have won in ${i} turns!`);
             break;
         }
+            
+        
     }
 }
 
