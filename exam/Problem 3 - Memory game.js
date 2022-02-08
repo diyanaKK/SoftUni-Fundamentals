@@ -42,12 +42,13 @@ function solve(input) {
         } else if (!elements >= 0 || elements.includes('end')) {
             console.log(`You have won in ${i} turns!`);
             break;
+        }else if(elements> 0 && !elements.includes(elements[firstIn]=== elements[secondIn])){
+            console.log(`You have won in ${i} turns!`);
+            break;
         }
             
-        
     }
 }
-
 
 solve([
     "a 2 4 a 2 4",
