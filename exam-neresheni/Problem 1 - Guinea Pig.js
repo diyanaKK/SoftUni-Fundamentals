@@ -7,11 +7,11 @@ let pigsWeight = Number(input)*1000;
 
 for(let i =0;i<30;i++){
  foodForMonth-=300;
-    if(i %2 ===0){
-         let hayForDay= foodForMonth*0.95/100
+    if(i ===2 ){
+         let hayForDay=foodForMonth*(foodForMonth*0.05)
          hayForMonth-=hayForDay;
-    }else if(i%3===0){
-        coverForDay= pigsWeight/ 1.3
+    }if(i%3===0){
+        coverForDay= pigsWeight/3
       coverForMonth-=coverForDay  
     }else if(foodForMonth === 0 || hayForMonth===0 || coverForMonth===0){
         break;
