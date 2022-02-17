@@ -8,6 +8,7 @@ for(let i = 0;i<input.length;i++){
     let newItem = tokens[2];
     let index =listWithProducts.indexOf(item);
 
+    if(command !== "Go Shopping!"){
     if(command === 'Urgent'){
         if(!listWithProducts.includes(item)){
             listWithProducts.unshift(item);
@@ -24,9 +25,14 @@ for(let i = 0;i<input.length;i++){
         if(listWithProducts.includes(item)){
             listWithProducts.splice(index,1).push(item);   
         }
-    } if(command === 'Go Shopping!'){
-        break;
-    }
+    } 
+    
+} else{
+    break;
+}
+    
+    
+    
 }
 console.log(listWithProducts.join(', '));
 
