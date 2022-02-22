@@ -5,18 +5,16 @@ class Cat{
     constructor(name,age){
         this.name = name,
         this.age= age,
-        this.meow = () => console.log(`${this.name} , age ${this.age} says Meow`);
+        this.meow = () => console.log(`${this.name}, age ${this.age} says Meow`);
     }
 }
 
 
-for(let i =0;i<array.length;i++){
-    let catData = array[i].split(' ');
-    let name,age;
-    let currentCat = new Cat(currentCat[0],currentCat[1])
-    currentCat.meow
-    cats.push(new Cat(name,age));
+for(let currentString of array){
+    let currentData = currentString.split(' ')
+    let currentCat= new Cat(currentData[0],currentData[1])
+    cats.push(currentCat)
 }
-
+cats.forEach(c => c.meow())
 }
 catsCreator(['Mellow 2','Tom 5'])
