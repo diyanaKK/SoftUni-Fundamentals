@@ -21,3 +21,4 @@ console.log(`Travel Points: ${travelPoints}`);
 }
 solve("=Hawai=/Cyprus/=Invalid/invalid==i5valid=/I5valid/=i=")
 // se kazvam diyana
+//az se kazvam
